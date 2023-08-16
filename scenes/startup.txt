@@ -1,0 +1,64 @@
+*title Växjö Zomb
+*author Mesarna
+*scene_list
+  startup
+  kyrkan
+  variables
+  gosub
+  ending
+  death
+
+*create karisma 50
+*create styrka 50
+
+*create tur 50
+*create teknik 60
+*create fysik 80
+
+*create handvapen "järnröret"
+
+*comment *sm_init mygame | 3
+Welcome to Växjö Zomb!
+
+Copyright 2023 by SuperMesarna.
+
+*page_break
+
+Klockan är 18 en sommarkväll i Vikaholm i Växjö. På radion säger man att det verkar vara ett underligt virus
+som har slagit ut delar av södra Sverige. Tv sändningar är utslagna men på radion hör du att det verkar vara en
+grupp ingenjörer som har en räddningsplaform i norra Växjö.
+
+En mesig läkare säger att det inte är någon fara men du vet att de ofta pratar strut.
+
+*choice
+  #Du är basjsnödig och bryr dig inte så mycket.
+    Om du sitter o bajsar när zombin kommer så är det inte så bra. Vad gör du?
+    *choice
+      #Torkar dig snabbt o rusar iväg.
+        Du sätter dig o pressar.
+        *choice
+          #Pappret är slut
+            Durmt
+            *finish
+          #En skön fullständig tömmning.
+            Du blir starkare
+            *finish          
+        *finish  
+      #Appoint charismatic knights and give them land, peasants, and resources.
+        Your majesty's people are eminently resourceful.  Your knights win the day,
+        but take care: they may soon demand a convention of parliament.
+        *finish
+      #Steal food and weapons from the enemy in the dead of night.
+        A cunning plan.  Soon your army is a match for the westerners; they choose
+        not to invade for now, but how long can your majesty postpone the inevitable?
+        *finish
+  #Lämna huset och gå norrut mot torparvägen.
+    Du möter en ensam zombie.
+    Vad gör du?
+    *gosub_scene mesasub strid
+    *finish
+
+  #Läs in ett medelande på telefonsvaren om hur mycket läsk du har.
+    The kingdom descends into chaos, but you manage to escape with your own hide.
+    Perhaps in time you can return to restore order to this fair land.
+    *finish

@@ -1,0 +1,42 @@
+*label strid
+*choice  
+    #Sparkar i skrevet      
+            *if tur>10
+                Ingen effekt. Zombin greppar dig, och försöker bita dig.
+                Vad gör du nu?
+            *set tur-10
+            *if (tur <=0) 
+                *goto_scene death
+            
+            *gosub_scene mesasub strid
+            *finish
+    #Springer/Försöker Fly
+        *if {fysik} > 70 
+             Du lyckas fly.
+            *return
+        Du kommer inte undan. Vad gör du då?
+        *gosub_scene mesasub strid
+        *finish
+    #Knuffar bort den
+        *if {fysik} > 50 
+            Du lyckas fly.
+           *return
+        Du kommer inte undan. Vad gör du då?
+        *gosub_scene mesasub strid
+        *finish
+    #Slår i huvudet med ${handvapen}.
+        Du nitar zombien hårt.
+        *gosub_scene mesasub plocka
+        *finish
+
+*label plocka
+Den döda har: svärd, vatten, toapapper
+*choice
+     
+    #Ta grejor
+        Tugnt
+        *return
+    #Lämna allt
+        Hm
+        *return
+

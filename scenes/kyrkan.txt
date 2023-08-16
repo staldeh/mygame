@@ -1,0 +1,18 @@
+*image images/kyrka.jpg
+*image kyrka.jpg
+
+
+Ni kommer fram till en mörk kyrka.
+
+Du känner att du är lite bajsnödig ändå.
+
+*choice
+  #Smyg in i buskage.
+    *goto klar
+  #Bajsa i byxan
+    *label klar
+    Du känner dig glad.
+    *finish
+  #Håller dig.
+    Du kämpar hårt för att kontrollera din tarm.
+    *finish

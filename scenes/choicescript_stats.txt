@@ -1,0 +1,14 @@
+Dina nuvarande stats:
+
+*stat_chart
+  percent Karisma
+  opposed_pair Styrka
+    Svaghet
+  percent Tur
+  percent Teknik
+  percent Fysik
+
+  text Karisma
+  text Styrka
+  text Fysik
+  text Teknik
