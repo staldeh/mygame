@@ -1,0 +1,34 @@
+Du ser en livlös man ligga på gräsmattan. Tio meter bort ligger hans ryggsäck 
+*choice
+    #stannar upp och iakttar
+        Mannen verkar ligga helt stilla, men ur hans ryggsäck sticker det upp ett skaft till en kofot. 
+        *label kolla 
+        *comment behövs för goto senare...
+        *choice
+            #Går fram till ryggsäcken för att leta igenom den
+                Du böjer dig över ryggsäcken. Det ligger en kofot där men ryggsäcken är igenknuten.  
+                När du försöker öppna den hör du steg bakom dig. Mannen har rest sig. Han ser galen ut. Han anfaller.
+                *gosub_scene mesasub strid
+                *comment annan fil med subrutiner, lable fight
+                *finish
+            #Avvaktar lite till. 
+                Du blir stående och stirrar på mannen som inte andas. Trots det vänder han sig på gräset och stirrar mot dig
+                *goto kolla
+                *finish
+    #Skyndar fram till den liggande mannen och undersöker honom
+        Mannen verkar inte andas, men han rör på fingrarna
+        *choice 
+            #Obehagligt. Du backar undan försiktigt 
+                Han andas fortfarande inte men han rör på munnen som om han försöker tala
+                *choice
+                    #Du backar skyndsamt undan
+                        Text
+                        *finish
+                    #Du lutar dig fram för att höra vad han säger
+                        Text
+                        *finish
+            #Han verkar behöva hjälp. Du vänder honom på rygg
+                Med blodsprängda ögon reser sig mannen. Han sträcker armarna mot dig för att anfalla.Du springer...
+                *if kondis < 30
+                    *goto_scene death
+                    
