@@ -1,6 +1,6 @@
 Du ser en livlös man ligga på gräsmattan. Tio meter bort ligger hans ryggsäck 
 *choice
-    #stannar upp och iakttar
+    #Stannar upp och iakttar
         Mannen verkar ligga helt stilla, men ur hans ryggsäck sticker det upp ett skaft till en kofot. 
         *label kolla 
         *comment behövs för goto senare...

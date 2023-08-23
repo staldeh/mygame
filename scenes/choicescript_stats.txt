@@ -4,11 +4,9 @@ Dina nuvarande stats:
   percent Karisma
   opposed_pair Styrka
     Svaghet
-  percent Tur
-  percent Teknik
+  opposed_pair Tur
+    Otur
+  percent Fardighet
   percent Fysik
 
-  text Karisma
-  text Styrka
-  text Fysik
-  text Teknik
+

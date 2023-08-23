@@ -1,0 +1,50 @@
+*comment set stats
+
+Du vaknar upp i din lägenhet i Vikaholm, en förort söder om Växjö. 
+Det är en vacker dag i början av hösten. Du har precis flyttat hit och packade in dina saker under gårdagen 
+innan du gick och lade dig. Du har sovit gott. Men känner dig mörbultad efter allt bärande. 
+Din kompis som hjälpte dig tog lastbilen och körde hem under natten.  
+
+Du sätter dig på sängkanten och ser dig om i den lilla lägenheten. Jodå, här kommer du nog att kunna trivas. 
+*label stat1
+*choice
+    #Börjar dagen med att gå in i duschen (K+5) 
+        *set karisma + 5
+        *goto stat2
+    #Jag behöver kaffe (T+5) 
+        *set tur + 5
+        *goto stat2
+    #Några armhävningar för att komma igång (S+5) 
+        *set styrka + 5
+        *goto stat2
+    #Funderar över i vilken låda datorn kan vara så att du kan koppla in den (F+5) 
+        *set fardighet + 5
+        *goto stat2
+*label stat2
+Du fixar med dina bestyr och kommer på att det är dags att klä på sig. 
+*choice
+    #Jag börjar med kalsongerna (S+5, F+5) 
+        *set styrka +5
+        *set fardighet +5
+        *goto stat3
+    #Jag tar mina trosor och linne (K+5, T+5) 
+        *set karisma +5
+        *set tur +5
+        *goto stat3
+    #Jag kör commando (S+5, T+5) 
+        *set styrka +5
+        *set tur +5
+        *goto stat3
+*label stat3
+Det smäller till i brevinkastet och när du tittar dit ser du att det rasat ner en tidning. Du prenumererar inte, men någon måste ha delat ut fel. Kul sätt att starta dagen och känna sig välkommen i din nya stad. 
+*choice
+    #Du kollar nyheterna (F+5) 
+        *goto stat4
+    #Du kollar sporten (S+5) 
+        *goto stat4
+    #Du letar upp kultursidorna (K+5) 
+        *goto stat4
+    #Hoppas dina favoritserier finns med (T+5) 
+        *goto stat4
+*label stat4
+*finish
