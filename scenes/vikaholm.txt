@@ -42,6 +42,7 @@ Det smäller till i brevinkastet och när du tittar dit ser du att det rasat ner
         *set fardighet +5
         *goto stat4
     #Du kollar sporten (S+5) 
+        *set styrka +5
         *goto stat4
     #Du letar upp kultursidorna (K+5) 
         *goto stat4
