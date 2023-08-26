@@ -39,6 +39,7 @@ Du fixar med dina bestyr och kommer på att det är dags att klä på sig.
 Det smäller till i brevinkastet och när du tittar dit ser du att det rasat ner en tidning. Du prenumererar inte, men någon måste ha delat ut fel. Kul sätt att starta dagen och känna sig välkommen i din nya stad. 
 *choice
     #Du kollar nyheterna (F+5) 
+        *set fardighet +5
         *goto stat4
     #Du kollar sporten (S+5) 
         *goto stat4
