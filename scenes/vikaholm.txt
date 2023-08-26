@@ -45,6 +45,7 @@ Det smäller till i brevinkastet och när du tittar dit ser du att det rasat ner
         *set styrka +5
         *goto stat4
     #Du letar upp kultursidorna (K+5) 
+        *set karisma +5
         *goto stat4
     #Hoppas dina favoritserier finns med (T+5) 
         *goto stat4
