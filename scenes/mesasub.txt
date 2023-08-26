@@ -40,3 +40,25 @@ Den döda har: svärd, vatten, toapapper
         Hm
         *return
 
+*label minmax
+
+*if (styrka > 100)
+   *set styrka 100
+*if (styrka < 0)
+   *set styrka 0
+
+*if (karisma > 100)
+    *set karisma 100
+*if (karisma < 0)
+    *set karisma 0
+
+*if (fardighet > 100)
+    *set fardighet 100
+*if (fardighet < 0)
+    *set fardighet 0
+    
+*if (kondis > 100)
+    *set kondis 100
+*if (kondis < 0)
+     *set kondis 0
+*return

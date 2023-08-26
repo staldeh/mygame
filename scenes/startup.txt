@@ -2,6 +2,7 @@
 *author Mesarna
 *scene_list
   startup
+  vikaholm
   mes
   kyrkan
   variables
@@ -12,6 +13,7 @@
 *create karisma 50
 *create styrka 50
 *create kondis 40
+*create fardighet 50
 
 *create tur 50
 *create teknik 60
@@ -25,6 +27,7 @@ Welcome to Växjö Zomb!
 Copyright 2023 by SuperMesarna.
 
 *page_break
+*goto_scene vikaholm
 
 Klockan är 18 en sommarkväll i Vikaholm i Växjö. På radion säger man att det verkar vara ett underligt virus
 som har slagit ut delar av södra Sverige. Tv sändningar är utslagna men på radion hör du att det verkar vara en
