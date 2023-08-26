@@ -35,7 +35,7 @@ Du ser en livlös man ligga på gräsmattan. Tio meter bort ligger hans ryggsäc
                         Text
                         *finish
             #Han verkar behöva hjälp. Du vänder honom på rygg
-                Med blodsprängda ögon reser sig mannen. Han sträcker armarna mot dig för att anfalla.Du springer...
+                Med blodsprängda ögon reser sig mannen. Han sträcker armarna mot dig för att anfalla.Du springer.
                 *if kondis < 30
                     *goto_scene death
                     
