@@ -1,6 +1,6 @@
 Du ser en livlös man ligga på gräsmattan. Tio meter bort ligger hans ryggsäck 
 *choice
-    #stannar upp och iakttar
+    #Stannar upp och iakttar
         Mannen verkar ligga helt stilla, men ur hans ryggsäck sticker det upp ett skaft till en kofot. 
         *label kolla 
         *comment behövs för goto senare...
@@ -10,11 +10,18 @@ Du ser en livlös man ligga på gräsmattan. Tio meter bort ligger hans ryggsäc
                 När du försöker öppna den hör du steg bakom dig. Mannen har rest sig. Han ser galen ut. Han anfaller.
                 *gosub_scene mesasub strid
                 *comment annan fil med subrutiner, lable fight
-                *finish
+                *choice
+                    #Du letar i ryggan.
+                        Hittar grejorna.
+                        *finish
+                    #Du springer iväg.
+                        Din fegis!
+                        *finish
+                
             #Avvaktar lite till. 
                 Du blir stående och stirrar på mannen som inte andas. Trots det vänder han sig på gräset och stirrar mot dig
                 *goto kolla
-                *finish
+                
     #Skyndar fram till den liggande mannen och undersöker honom
         Mannen verkar inte andas, men han rör på fingrarna
         *choice 
