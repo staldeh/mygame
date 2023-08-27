@@ -21,6 +21,7 @@ Du sätter dig på sängkanten och ser dig om i den lilla lägenheten. Jodå, h�
         *set fardighet + 5
         *goto stat2
 *label stat2
+*gosub_scene mesasub minmax
 Du fixar med dina bestyr och kommer på att det är dags att klä på sig. 
 *choice
     #Jag börjar med kalsongerna (S+5, F+5) 
