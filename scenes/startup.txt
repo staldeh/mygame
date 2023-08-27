@@ -4,6 +4,7 @@
   startup
   vikaholm
   torparvagen
+  vattentornet
   mes
   kyrkan
   variables
