@@ -3,6 +3,7 @@
 *scene_list
   startup
   vikaholm
+  torparvagen
   mes
   kyrkan
   variables
