@@ -200,7 +200,7 @@ Butiken är helt tömd på varor förutom en del som ligger söndertrampat på g
         *goto stat12
 *label stat12
 *gosub_scene mesasub minmax
-Mannen stannar flämtande upp. ”De är här!” får han ur sig med uppspärrade ögon. ”Sjukdomen. De smittade, de är här!” Han flåsar vidare och stirrar längs med vägen.
+Mannen stannar flämtande upp. [i]”De är här!”[/i] får han ur sig med uppspärrade ögon. [i]”Sjukdomen. De smittade, de är här!”[/i] Han flåsar vidare och stirrar längs med vägen.
 ”Vad menar du?” undrar du ”Berätta vad som händer!”
 ”Jag såg dem komma! Hundratals. De går inte att stoppa. Vi måste fly!” 
 ”Men vart?” undrar du ”Vart ska vi ta vägen?”
