@@ -8,49 +8,52 @@ Din kompis som hjälpte dig tog lastbilen och körde hem under natten.
 Du sätter dig på sängkanten och ser dig om i den lilla lägenheten. Jodå, här kommer du nog att kunna trivas. 
 *label stat1
 *choice
-    #Börjar dagen med att gå in i duschen (K+5) 
+    #Börjar dagen med att gå in i duschen
         *set karisma + 5
         *goto stat2
     #Jag behöver kaffe (T+5) 
         *set tur + 5
         *goto stat2
-    #Några armhävningar för att komma igång (S+5) 
+    #Några armhävningar för att komma igång 
         *set styrka + 5
         *goto stat2
-    #Funderar över i vilken låda datorn kan vara så att du kan koppla in den (F+5) 
+    #Funderar över i vilken låda datorn kan vara så att du kan koppla in den.
         *set fardighet + 5
         *goto stat2
 *label stat2
 *gosub_scene mesasub minmax
 Du fixar med dina bestyr och kommer på att det är dags att klä på sig. 
 *choice
-    #Jag börjar med kalsongerna (S+5, F+5) 
+    #Jag börjar med kalsongerna. 
         *set styrka +5
         *set fardighet +5
         *goto stat3
-    #Jag tar mina trosor och linne (K+5, T+5) 
+    #Jag tar mina trosor och linne. 
         *set karisma +5
         *set tur +5
         *goto stat3
-    #Jag kör commando (S+5, T+5) 
+    #Jag kör commando.
         *set styrka +5
         *set tur +5
         *goto stat3
 *label stat3
+*gosub_scene mesasub minmax
 Det smäller till i brevinkastet och när du tittar dit ser du att det rasat ner en tidning. Du prenumererar inte, men någon måste ha delat ut fel. Kul sätt att starta dagen och känna sig välkommen i din nya stad. 
 *choice
-    #Du kollar nyheterna (F+5) 
+    #Du kollar nyheterna. 
         *set fardighet +5
         *goto stat4
-    #Du kollar sporten (S+5) 
+    #Du kollar sporten.
         *set styrka +5
         *goto stat4
-    #Du letar upp kultursidorna (K+5) 
+    #Du letar upp kultursidorna. 
         *set karisma +5
         *goto stat4
-    #Hoppas dina favoritserier finns med (T+5) 
+    #Hoppas dina favoritserier finns med.
+        *set tur +5
         *goto stat4
 *label stat4
+*gosub_scene mesasub minmax
 Redan på första sidan kan du läsa en stor rubrik. ALLVARLIGA KRAVALLER I KARLSKRONA EFTER ATT POLENFÄRGAN ANLÄNT. 
 Det är bara några korta rader som man har fått med innan tidningen skulle gå i tryck, men det tycks som att regelrätta 
 strider utbrutit i hamnen i Karlskrona och att polisen har fått använda dödligt våld. Ett stort antal skadade ska ha förts 
@@ -58,28 +61,38 @@ till Lasarettet i Karlskrona.
 Du hittar din mobil. Du glömde ladda den under gårdagen och det är bara några få procents laddning kvar. Laddsladden måste ligga i 
 en av dina lådor.
 *choice
-    #Börjar leta efter laddsladden (F+5)
+    #Börjar leta efter laddsladden.
+        *set fysik +5
         *goto stat5
-    #Skickar ett meddelande till min flyttkompis och tackar för hjälpen (S+5)
+    #Skickar ett meddelande till min flyttkompis och tackar för hjälpen.
+        *set styrka +5
         *goto stat5
-    #kickar ett meddelande till mamma att du kommit fram ordentligt (K+5)
+    #kickar ett meddelande till mamma att du kommit fram ordentligt.
+        *set karisma +5
         *goto stat5
-    #Tar en selfie och postar på sociala medier med den coola texten ”Växjö, här kommer jag!!!” (T+5)
+    #Tar en selfie och postar på sociala medier med den texten ”Växjö, här kommer jag!!!”.
+        *set tur +5
         *goto stat5
 *label stat5
+*gosub_scene mesasub minmax
 Mobilen blinkar till och slocknar. Du suckar djupt, men sen går det en kall kår längst ryggen laddsladden ligger ju i samma väska som datorn! Och den la du i baksätet på kompisens bil. Ni måste ha glömt väskan när ni lastade av släpet, och nu är väskan säkert redan tillbaka i Stockholm. Där gick dina kontakter med omvärlden, åtminstone tills du får tag på en ny sladd.
 I en av dina lådor ligger en gammal radio. Det skulle vara trevligt med lite ljud i bostaden så du sätter i sladden och börjar ratta in en kanal.
 *choice    
-    #P1 brukar ha intressanta debatter (K+5)
+    #P1 brukar ha intressanta debatter.
+        *set karisma +5
         *goto stat6
-    #Jag letar efter en musikkanal, jag behöver få upp pulsen (S+5)
+    #Jag letar efter en musikkanal, jag behöver få upp pulsen.
+        *set styrka +5
         *goto stat6
-    #Lokalradion kanske har något kul (F+5)
+    #Lokalradion kanske har något kul.
+        *set fysik +5
         *goto stat6
-    #Jag tar första bästa… (T+5)
+    #Jag tar första bästa…
+        *set tur +5
         *goto stat6
 
 *label stat6
+*gosub_scene mesasub minmax
 Du hittar en kanal, men sändningen bryts av ett nyhetsinslag:
 ”Regeringen utfärdar allvarligt katastrofläge. De oroligheter som utbröt i Karlskrona under natten efter att färjan från Polen anlänt har spridit sig över hela staden. Under natten har flera nödrop kommit. Polisen har rapporterat upplopp över hela staden. Bränder, skottlossning, mord och misshandel har rapporterats. Blekingesjukhuset rapporterade redan vid 02 att verksamheten stänger. Sedan 05 i morse har inga ytterligare nyheter kommit från staden. Telefonnät är överbelastade och även polisens kommunikation har brutits.
 Det har spekulerats om det rör sig om ett anfall från en främmande makt, men de senaste teorierna är att det rör sig om någon typ av smittsam sjukdom. Detta tycks ha utlöst den panik som orsakat kravallerna.
@@ -87,31 +100,41 @@ Lina Bengtsdotter, miljöpartiets lokala talesperson i Blekinge, som för tillf�
 Du blir fundersam. Det låter oroväckande. Du är inte helt säker men du tror inte att kuststaden är så långt bort. Tio mil kanske. Du undrar om det kommer att påverka dina studier som börjar i morgon.
 Du bestämmer dig för att gå ner till den lokala butiken.
 *choice
-    #Du kollar dig i spegeln först och fixar till frisyren (K+5)
+    #Du kollar dig i spegeln först och fixar till frisyren.
+        *set karisma +5
         *goto stat7
-    #Passar på att gå på toaletten (S+5)
+    #Passar på att gå på toaletten.
+        *set styrka +5
         *goto stat7
-    #Funderar över kriminaliteten i staden. Dörren verkar inte inbrottssäker (F+5)
+    #Funderar över kriminaliteten i staden. Dörren verkar inte inbrottssäker.
+        *set fysik +5
         *goto stat7
-    #Sak samma, jag går (T+5)
+    #Sak samma, jag går.
+        *set tur +5
         *goto stat7
 *label stat7
+*gosub_scene mesasub minmax
 Du bor på en vacker gata, omgiven av nybyggda, välplanerade bostäder. Du kommer säkerligen att trivas här, tänker du.
 Men det finns en märklig stämning i luften. De människor du ser verkar skynda sig fram eller pratar med oroade röster och bekymrade miner. Du behöver inte höra vad de säger – du ser att människor är rädda. Du ser flera familjer som kastar in packning i sina bilar och du ser bilar som rivstartar för att komma iväg.
 Du tänker att du kanske ska fråga någon förbipasserande om vad som står på, men ingen vill prata med dig. De skyndar förbi med något stressat i blicken.
 Du skyndar dig mot butiken som ligger några hundra meter bort.
 Det är massor av stressade människor i butiken och de sliter i matvarorna. Toalettpappershyllorna och pastahyllorna gapar redan tomma och det börjar tömmas på andra hyllor också. Det gäller att passa på om du ska få i dig något att äta.
 *choice
-    #Jordnötter! Du behöver proteiner. (S+5)
+    #Jordnötter! Du behöver proteiner.
+        *set styrka +5
         *goto stat8
-    #Frukt! Man behöver inte leva onyttigt bara för att det är oro i världen (K+5)
+    #Frukt! Man behöver inte leva onyttigt bara för att det är oro i världen.
+        *set karisma +5
         *goto stat8
-    #Russin och mörk choklad kan vara bra att ha (F+5)
+    #Russin och mörk choklad kan vara bra att ha.
+        *set fysik +5
         *goto stat8
-    #Det finns lösviktsgodis kvar. Du öser upp en stor påse. (T+5)
+    #Det finns lösviktsgodis kvar. Du öser upp en stor påse.
+        *set tur +5
         *goto stat8
 
 *label stat8
+*gosub_scene mesasub minmax
 Du tar med dina varor till kassan. Ovanför disken hänger en TV som visar nyheter. Ljudet är lågt, men bilderna som visas är en helikopter som flyger över en stad, där det brinner på flera ställen. Man kan se hamnen i staden och havet bortanför. Du har aldrig varit i Karlskrona men anar att det är staden ni ser. Det brinner i flera byggnader.
 *choice
     #Du ber butiksägaren höja ljudet (K+5)
@@ -123,6 +146,7 @@ Du tar med dina varor till kassan. Ovanför disken hänger en TV som visar nyhet
     #Det är nog inget viktigt ändå (T+5)
         *goto stat9
 *label stat9
+*gosub_scene mesasub minmax
 Människorna i butiken tystnar och du uppfattar ljudet på TVn. ”…från hela staden. Myndigheterna har ännu inte kommenterat läget. Vi har heller inte lyckats nå vår egen redaktion för en rapport från gatan. Det är mycket dramatiska och oroande bilder vi ser”. Bilderna från helikoptern slutar och det är klipp till en medelålders, osminkad kvinna med håret i knut. Längst ner står namnet Lina Bengtsdotter och du inser att det kommer en intervju, men kunderna har blivit mer högljudda och det går inte att höra vad som sägs.
 Du betalar dina varor, men många kunder lämnar butiken med armarna fulla av varor som de inte betalar för. Paniken ligger i luften och det unga butiksbiträdet vågar inte stoppa någon.
 Du vandrar tillbaka mot din bostad. Fler bilar lämnar området och tutar på alla som kommer i vägen.
@@ -137,6 +161,7 @@ Du låser noga om dig och vankar fram och tillbaka och funderar över din situat
     #Du hänger vid fönstret för att se när grannar lämnar området i sina bilar (K+5) 
         *goto stat10
 *label stat10
+*gosub_scene mesasub minmax
 Timmarna tickar på. Du tuggar på den lilla ranson med ätbart du fick med dig från affären. Du dricker vatten från kranen och kommer på att fylla alla kärl och grytor du har om vattnet skulle stängas av.
 På eftermiddagen hör du ljud från grannen på våningen ovanför. Du inser att du kan gå dit och fråga om du får låna en telefon eller en laddsladd.
 Du går upp en trappa och ringer på. Det tystnar där inne och du ringer på igen. Efter någon minut svarar en försiktig kvinnoröst: -”Vad vill du?”, utan att dörren öppnas. Du inser att hon är ännu mer orolig än du för det som händer.
@@ -158,6 +183,7 @@ Det är tyst ett tag innan hon skriker [i]”Gå din väg! Försök inte ta dig 
         *goto stat11
 
 *label stat11
+*gosub_scene mesasub minmax
 Du blir stående en stund men oavsett vad du gör är det tyst på andra sidan dörren. Du knackar och ringer på hos andra i trappuppgången, men du får inget svar.
 Du går tillbaka till din lägenhet igen. Du blir mer och mer nervös och vankar runt utan någon plan. Du kan inte ta kontakt med omvärlden. Alla verkar livrädda, och du förstår inte vad som händer.
 Timmarna går och det blir allt mer tyst utanför på gatan. Kvällen närmar sig och du behöver få information om läget innan natten. Du bestämmer dig för att gå tillbaka till affären och se om de kan ge dig en uppdatering om läget. 
@@ -173,7 +199,8 @@ Butiken är helt tömd på varor förutom en del som ligger söndertrampat på g
     #Du försöker ignorera honom. Han verkar bara rädd. (F+5)
         *goto stat12
 *label stat12
-Mannen stannar flämtande upp. ”De är här!” får han ur sig med uppspärrade ögon. ”Sjukdomen. De smittade, de är här!” Han flåsar vidare och stirrar längs med vägen.
+*gosub_scene mesasub minmax
+Mannen stannar flämtande upp. [i]”De är här!”[/i] får han ur sig med uppspärrade ögon. [i]”Sjukdomen. De smittade, de är här!”[/i] Han flåsar vidare och stirrar längs med vägen.
 ”Vad menar du?” undrar du ”Berätta vad som händer!”
 ”Jag såg dem komma! Hundratals. De går inte att stoppa. Vi måste fly!” 
 ”Men vart?” undrar du ”Vart ska vi ta vägen?”

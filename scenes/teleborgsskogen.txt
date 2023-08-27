@@ -1,0 +1,9 @@
+Du hittar snabbt en cykelväg som leder norrut mellan husen. 
+Du uppfattar ljudet av en helikopter västerut, men den flyger utom synhåll och ljudet försvinner igen. 
+Det lyser I fönstren, men det är olycksbådande tyst. Det verkar som om människor håller sig inomhus. 
+När du passerar ett hus ser du kroppen av en man i trädgården. Han ligger helt stilla och du kan inte se att han andas.
+*choice
+    #Du går fram för att undersöka mannen och se om du kan hjälpa honom.
+        
+    #Du fortsätter framåt mot ett skogsparti. Han kan vara en av de smittade.
+        
