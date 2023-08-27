@@ -174,6 +174,7 @@ Timmarna tickar på. Du tuggar på den lilla ranson med ätbart du fick med dig 
 På eftermiddagen hör du ljud från grannen på våningen ovanför. Du inser att du kan gå dit och fråga om du får låna en telefon eller en laddsladd.
 Du går upp en trappa och ringer på. Det tystnar där inne och du ringer på igen. Efter någon minut svarar en försiktig kvinnoröst: -”Vad vill du?”, utan att dörren öppnas. Du inser att hon är ännu mer orolig än du för det som händer.
 ”Jag undrar om du vet vad som händer i Karlskrona?” frågar du
+*line_break
 ”Det är inte begränsat till Karlskrona längre” viskar hon på andra sidan ”Det är upplopp i alla samhällen i Blekinge. Senast rapporterade de från Rävemåla. Det kommer hitåt”
 -”Men vad är det som händer?” undrar du. ”Är det en invasion, eller?”
 -”De säger att det är en sjukdom” svarar hon. ”Det är någon form av parasit eller nåt. Det får de drabbade att anfalla andra människor. Det är fruktansvärt….”
@@ -217,21 +218,13 @@ Butiken är helt tömd på varor förutom en del som ligger söndertrampat på g
 *gosub_scene mesasub minmax
 Mannen stannar flämtande upp. [i]”De är här!”[/i] får han ur sig med uppspärrade ögon. [i]”Sjukdomen. De smittade, de är här!”[/i] Han flåsar vidare och stirrar längs med vägen.
 ”Vad menar du?” undrar du ”Berätta vad som händer!”
+*line_break
 ”Jag såg dem komma! Hundratals. De går inte att stoppa. Vi måste fly!” 
 ”Men vart?” undrar du ”Vart ska vi ta vägen?”
 Han stirrar på dig och tvekar men får sedan syn på kartan du håller i handen. Han tar den och vecklar snabbt ut den. Han pekar på en plats precis i norra kanten av kartan. En gammal borgruin, hinner du se.
 ”Där” pekar han. ”De säger att det är en uppsamlingsplats där och att det ska vara säkert…”
 Han hinner inte längre förrän ni hör ett avlägset vrål som bryts av gälla skrik och rop på hjälp. Det låter som om en storm drar in över det lugna samhället. Paniken kommer tillbaka i hans ögon. Han slänger kartan och rusar iväg. Han råkar knuffa till dig så du förlorar balansen. Du samlar ihop dig och plockar upp kartan. Den unge mannen är redan utom synhåll. Vrålet närmar sig.
 Du tar dig samman och börjar springa. Norrut. Genom ett skogsområde. Bort från det isande vrålet! 
-*page_break
-Du kravlar upp på vägen. Andan I halsen. Ingen tycks ha följt efter dig. Du blir stående någon minut.  Det är märkligt tyst, och det kommer inte en enda bil på den vanligtvis trafikerade Torparvägen.
-Du måste fortsätta. Det finns tre alternativ. 
-*choice
-    #Västerut på Torparvägen
-        *goto_scene mes
-    #Österut på Torparvägen 
-        *goto_scene mes
-    #Rakt norrut, in bland villakvarteren
-        *goto_scene mes
+
         
 *finish

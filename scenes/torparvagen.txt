@@ -2,9 +2,10 @@ Du kravlar upp på vägen. Andan I halsen. Ingen tycks ha följt efter dig. Du b
 Du måste fortsätta. Det finns tre alternativ. 
 *choice
     #Västerut på Torparvägen
-        *goto_scene mes
+        *goto_scene torparkyrkan
     #Österut på Torparvägen 
-        *goto_scene mes
+        Du ser en helikopter.
+        *goto_scene vattentornet
     #Rakt norrut, in bland villakvarteren
-        *goto_scene mes
+        *goto_scene teleborgsskogen
         

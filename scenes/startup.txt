@@ -4,6 +4,8 @@
   startup
   vikaholm
   torparvagen
+  torparkyrkan
+  teleborgsskogen
   vattentornet
   mes
   kyrkan
