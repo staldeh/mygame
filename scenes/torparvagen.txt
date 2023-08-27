@@ -4,7 +4,21 @@ Du måste fortsätta. Det finns tre alternativ.
     #Västerut på Torparvägen
         *goto_scene torparkyrkan
     #Österut på Torparvägen 
+        *image helikopter.jpg
+        Du vandrar vidare österut mot vattentornet. Det börjar bli mörkt.
+        *line_break
         Du ser en helikopter.
+        *choice
+            #Du försökert vinka dem till dig.
+                De ignorerar dig helt.
+                *goto forts
+            #Du kollar men skyndar vidare.
+                De försviner i fjärran.
+                *goto forts
+            #Du tar skydd.
+                Du vet inte riktigt varför men du fick en ond aning.
+                *goto forts
+        *label forts    
         *goto_scene vattentornet
     #Rakt norrut, in bland villakvarteren
         *goto_scene teleborgsskogen
