@@ -4,12 +4,7 @@ Det lyser I fönstren, men det är olycksbådande tyst. Det verkar som om männi
 När du passerar ett hus ser du kroppen av en man i trädgården. Han ligger helt stilla och du kan inte se att han andas.
 *choice
     #Du går fram för att undersöka mannen och se om du kan hjälpa honom.
-        Det finns ett vagt hopp att han inget är fel med honom, det hoppet försvinner när du ser blodpölen 
-        som sakta håller på att bli större
-         under honom. Den röda vätskan har spridit ut sig långt till att lätt vara dubbelt så stor som hans silhuett,
-        det befläckade gräset en skarp kontrast med mannens gråa hud.
-        Du vill bli mer upprörd, visa sorg och sympati för honom, men det enda du orkar, nej vågar göra är att sucka djupt.
-        
         
     #Du fortsätter framåt mot ett skogsparti. Han kan vara en av de smittade.
+        *finish
         

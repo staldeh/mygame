@@ -1,0 +1,10 @@
+Vägen kröker av norrut och det är fortfarande tomt på trafik. 
+Till vänster om dig ligger ett gym och en pizzeria, båda verkar stängda och folktomma. 
+Bredvid ligger en kyrka. Du ser bilar på parkeringen och du ser att det rör sig människor I kyrkan 
+*choice
+    #Du fortsätter norrut på Torparvägen för att ta dig snabbaste vägen genom staden 
+        *finish
+    #Du smyger dig fram till kyrkan för att se om du kan ta kontakt med människorna där
+        *finish
+    #Du inser att du kan välja att ta dig ner till Bergundasjön och gå runt den och kanske undvika människor helt
+        *finish

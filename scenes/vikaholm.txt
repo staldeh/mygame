@@ -11,7 +11,7 @@ Du sätter dig på sängkanten och ser dig om i den lilla lägenheten. Jodå, h�
     #Börjar dagen med att gå in i duschen
         *set karisma + 5
         *goto stat2
-    #Jag behöver kaffe (T+5) 
+    #Jag behöver kaffe.
         *set tur + 5
         *goto stat2
     #Några armhävningar för att komma igång 
@@ -137,13 +137,17 @@ Det är massor av stressade människor i butiken och de sliter i matvarorna. Toa
 *gosub_scene mesasub minmax
 Du tar med dina varor till kassan. Ovanför disken hänger en TV som visar nyheter. Ljudet är lågt, men bilderna som visas är en helikopter som flyger över en stad, där det brinner på flera ställen. Man kan se hamnen i staden och havet bortanför. Du har aldrig varit i Karlskrona men anar att det är staden ni ser. Det brinner i flera byggnader.
 *choice
-    #Du ber butiksägaren höja ljudet (K+5)
+    #Du ber butiksägaren höja ljudet.
+        *set karisma +5
         *goto stat9
-    #Du lutar dig fram, tar fjärrkontrollen, och höjer ljudet (F+5)
+    #Du lutar dig fram, tar fjärrkontrollen, och höjer ljudet.
+        *set fysik +5
         *goto stat9
-    #Du höjer din röst och ber alla vara tysta (S+5)
+    #Du höjer din röst och ber alla vara tysta.
+        *set styrka +5
         *goto stat9
-    #Det är nog inget viktigt ändå (T+5)
+    #Det är nog inget viktigt ändå.
+        *set tur +5
         *goto stat9
 *label stat9
 *gosub_scene mesasub minmax
@@ -152,13 +156,17 @@ Du betalar dina varor, men många kunder lämnar butiken med armarna fulla av va
 Du vandrar tillbaka mot din bostad. Fler bilar lämnar området och tutar på alla som kommer i vägen.
 Du låser noga om dig och vankar fram och tillbaka och funderar över din situation. Vad ska du göra om oroligheterna sprider sig till den här staden?
 *choice
-    #Du börjar packa upp dina lådor, så du får lite ordning i lägenheten (K+5)
+    #Du börjar packa upp dina lådor, så du får lite ordning i lägenheten.
+        *set karisma +5
         *goto stat10
-    #Du testar olika möjligheter att barrikera dörren om någon skulle försöka bryta sig in (S+5)
+    #Du testar olika möjligheter att barrikera dörren om någon skulle försöka bryta sig in.
+        *set styrka +5
         *goto stat10
-    #Du bläddrar i din kurslitteratur. Om allt är som vanligt imorgon så vill du vara förberedd (F+5)
+    #Du bläddrar i din kurslitteratur. Om allt är som vanligt imorgon så vill du vara förberedd.
+        *set fysik +5
         *goto stat10
-    #Du hänger vid fönstret för att se när grannar lämnar området i sina bilar (K+5) 
+    #Du hänger vid fönstret för att se när grannar lämnar området i sina bilar.
+        *set karisma +5
         *goto stat10
 *label stat10
 *gosub_scene mesasub minmax
@@ -166,6 +174,7 @@ Timmarna tickar på. Du tuggar på den lilla ranson med ätbart du fick med dig 
 På eftermiddagen hör du ljud från grannen på våningen ovanför. Du inser att du kan gå dit och fråga om du får låna en telefon eller en laddsladd.
 Du går upp en trappa och ringer på. Det tystnar där inne och du ringer på igen. Efter någon minut svarar en försiktig kvinnoröst: -”Vad vill du?”, utan att dörren öppnas. Du inser att hon är ännu mer orolig än du för det som händer.
 ”Jag undrar om du vet vad som händer i Karlskrona?” frågar du
+*line_break
 ”Det är inte begränsat till Karlskrona längre” viskar hon på andra sidan ”Det är upplopp i alla samhällen i Blekinge. Senast rapporterade de från Rävemåla. Det kommer hitåt”
 -”Men vad är det som händer?” undrar du. ”Är det en invasion, eller?”
 -”De säger att det är en sjukdom” svarar hon. ”Det är någon form av parasit eller nåt. Det får de drabbade att anfalla andra människor. Det är fruktansvärt….”
@@ -173,15 +182,18 @@ Du inser att hon är livrädd på andra sidan dörren, men du provar ändå:
 -”Jag skulle behöva låna en sladd till min telefon. Kan du tänka dig att låna ut en sådan?”
 Det är tyst ett tag innan hon skriker [i]”Gå din väg! Försök inte ta dig in här! Jag har vapen!”[/i]
 *choice
-    #Du försöker tala lugnande med henne (K+5)
+    #Du försöker tala lugnande med henne.
+        *set karisma +5
         *goto stat11
-    #Du bankar på dörren och skriker tillbaka att du inte vill bli hotad (S+5)
+    #Du bankar på dörren och skriker tillbaka att du inte vill bli hotad.
+        *set styrka +5
         *goto stat11
-    #Du ställer dig vid sidan om dörren om hon skulle skjuta genom den och väntar en stund (F+5)
+    #Du ställer dig vid sidan om dörren om hon skulle skjuta genom den och väntar en stund.
+        *set fardighet +5
         *goto stat11
-    #Du klampar med fötterna svagare och svagare som om du lämnade dörren, så hon ska tro att du gått (T+5)
+    #Du klampar med fötterna svagare och svagare som om du lämnade dörren, så hon ska tro att du gått.
+        *set tur +5
         *goto stat11
-
 *label stat11
 *gosub_scene mesasub minmax
 Du blir stående en stund men oavsett vad du gör är det tyst på andra sidan dörren. Du knackar och ringer på hos andra i trappuppgången, men du får inget svar.
@@ -190,18 +202,23 @@ Timmarna går och det blir allt mer tyst utanför på gatan. Kvällen närmar si
 Det är spöklikt tyst på gatorna och folktomt. Det är fortfarande vackert väder och solen håller sakta på att sänka sig. Du vandrar långsamt framåt och lyssnar spänt. Det tar inte lång tid fram till affären men du ser att den är helt tom. Du känner på dörren och det är olåst så du smyger in.
 Butiken är helt tömd på varor förutom en del som ligger söndertrampat på golvet. På disken ser du en turistkarta över Växjö. Utan att tänka närmare tar du den med dig innan du lämnar butiken. Du blir stående utanför och vecklar upp kartan när du hör springande steg mot dig. En ung man kommer rusande. Han är vettskrämd.
 *choice
-    #Du ler vänligt och vinkar åt honom (T+5)
+    #Du ler vänligt och vinkar åt honom.
+        *set tur +5
         *goto stat12
-    #Du spänner upp dig och signalerar till honom att stanna (S+5)
+    #Du spänner upp dig och signalerar till honom att stanna.
+        *set styrka +5
         *goto stat12
-    #Du ropar till honom ”Hej! Kan du hjälpa mig?” (K+5)
+    #Du ropar till honom ”Hej! Kan du hjälpa mig?”
+        *set karisma +5
         *goto stat12
-    #Du försöker ignorera honom. Han verkar bara rädd. (F+5)
+    #Du försöker ignorera honom. Han verkar bara rädd.
+        *set fardighet +5
         *goto stat12
 *label stat12
 *gosub_scene mesasub minmax
 Mannen stannar flämtande upp. [i]”De är här!”[/i] får han ur sig med uppspärrade ögon. [i]”Sjukdomen. De smittade, de är här!”[/i] Han flåsar vidare och stirrar längs med vägen.
 ”Vad menar du?” undrar du ”Berätta vad som händer!”
+*line_break
 ”Jag såg dem komma! Hundratals. De går inte att stoppa. Vi måste fly!” 
 ”Men vart?” undrar du ”Vart ska vi ta vägen?”
 Han stirrar på dig och tvekar men får sedan syn på kartan du håller i handen. Han tar den och vecklar snabbt ut den. Han pekar på en plats precis i norra kanten av kartan. En gammal borgruin, hinner du se.
@@ -209,4 +226,5 @@ Han stirrar på dig och tvekar men får sedan syn på kartan du håller i handen
 Han hinner inte längre förrän ni hör ett avlägset vrål som bryts av gälla skrik och rop på hjälp. Det låter som om en storm drar in över det lugna samhället. Paniken kommer tillbaka i hans ögon. Han slänger kartan och rusar iväg. Han råkar knuffa till dig så du förlorar balansen. Du samlar ihop dig och plockar upp kartan. Den unge mannen är redan utom synhåll. Vrålet närmar sig.
 Du tar dig samman och börjar springa. Norrut. Genom ett skogsområde. Bort från det isande vrålet! 
 
+        
 *finish
