@@ -26,10 +26,18 @@
 *create handvapen "järnröret"
 
 *comment *sm_init mygame | 3
-Welcome to Växjö Zomb!
+Välkomment till Växjö Zomb!
 
-Copyright 2023 by SuperMesarna.
+Alla rättigheter 2023 by SuperMesarna.
 
+*temp skip
+*choice
+    # Starta spelet.
+      *goto_scene vikaholm
+    # Hoppa till en viss scen. (notera stats)
+        *input_text skip
+        *goto_scene {skip}
+*finish
 *page_break
 *goto_scene vikaholm
 
