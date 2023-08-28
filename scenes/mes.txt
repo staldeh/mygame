@@ -2,8 +2,6 @@ Du ser en livlös man ligga på gräsmattan. Tio meter bort ligger hans ryggsäc
 *choice
     #Stannar upp och iakttar
         Mannen verkar ligga helt stilla, men ur hans ryggsäck sticker det upp ett skaft till en kofot. 
-        
-        *comment behövs för goto senare...
         *choice
             #Går fram till ryggsäcken för att leta igenom den
                 Du böjer dig över ryggsäcken. Det ligger en kofot där men ryggsäcken är igenknuten.  
@@ -41,7 +39,7 @@ Du ser en livlös man ligga på gräsmattan. Tio meter bort ligger hans ryggsäc
                         
                 *label p6
                 Med blodsprängda ögon reser sig mannen. Han sträcker armarna mot dig för att anfalla.Du springer.
-                *if kondis < 30
+                *if tur < 30
                     *goto_scene death
                 *finish    
                     
