@@ -2,7 +2,7 @@ Du ser en livlös man ligga på gräsmattan. Tio meter bort ligger hans ryggsäc
 *choice
     #Stannar upp och iakttar
         Mannen verkar ligga helt stilla, men ur hans ryggsäck sticker det upp ett skaft till en kofot. 
-        *label kolla 
+        
         *comment behövs för goto senare...
         *choice
             #Går fram till ryggsäcken för att leta igenom den
@@ -19,23 +19,29 @@ Du ser en livlös man ligga på gräsmattan. Tio meter bort ligger hans ryggsäc
                         *finish
                 
             #Avvaktar lite till. 
+                *label p4
                 Du blir stående och stirrar på mannen som inte andas. Trots det vänder han sig på gräset och stirrar mot dig
-                *goto kolla
+                
+                *goto p6
                 
     #Skyndar fram till den liggande mannen och undersöker honom
         Mannen verkar inte andas, men han rör på fingrarna
         *choice 
             #Obehagligt. Du backar undan försiktigt 
+                *goto p4
+            #Han verkar behöva hjälp. Du vänder honom på rygg
                 Han andas fortfarande inte men han rör på munnen som om han försöker tala
                 *choice
                     #Du backar skyndsamt undan
-                        Text
-                        *finish
+                        *goto p6
+                        
                     #Du lutar dig fram för att höra vad han säger
-                        Text
-                        *finish
-            #Han verkar behöva hjälp. Du vänder honom på rygg
+                        Du lägger örat mot mannens mun för att höra, men han griper dig och borrar sina tänder i din hals. 
+                        *goto_scene death
+                        
+                *label p6
                 Med blodsprängda ögon reser sig mannen. Han sträcker armarna mot dig för att anfalla.Du springer.
                 *if kondis < 30
                     *goto_scene death
+                *finish    
                     

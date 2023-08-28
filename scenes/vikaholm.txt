@@ -54,7 +54,7 @@ Det smäller till i brevinkastet och när du tittar dit ser du att det rasat ner
         *goto stat4
 *label stat4
 *gosub_scene mesasub minmax
-Redan på första sidan kan du läsa en stor rubrik. ALLVARLIGA KRAVALLER I KARLSKRONA EFTER ATT POLENFÄRGAN ANLÄNT. 
+Redan på första sidan kan du läsa en stor rubrik. [b]ALLVARLIGA KRAVALLER I KARLSKRONA EFTER ATT POLENFÄRJAN ANLÄNT. [/b]
 Det är bara några korta rader som man har fått med innan tidningen skulle gå i tryck, men det tycks som att regelrätta 
 strider utbrutit i hamnen i Karlskrona och att polisen har fått använda dödligt våld. Ett stort antal skadade ska ha förts 
 till Lasarettet i Karlskrona.
@@ -67,7 +67,7 @@ en av dina lådor.
     #Skickar ett meddelande till min flyttkompis och tackar för hjälpen.
         *set styrka +5
         *goto stat5
-    #kickar ett meddelande till mamma att du kommit fram ordentligt.
+    #Skickar ett meddelande till mamma att du kommit fram ordentligt.
         *set karisma +5
         *goto stat5
     #Tar en selfie och postar på sociala medier med den texten ”Växjö, här kommer jag!!!”.
