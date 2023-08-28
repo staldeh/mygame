@@ -94,9 +94,12 @@ I en av dina lådor ligger en gammal radio. Det skulle vara trevligt med lite lj
 *label stat6
 *gosub_scene mesasub minmax
 Du hittar en kanal, men sändningen bryts av ett nyhetsinslag:
-”Regeringen utfärdar allvarligt katastrofläge. De oroligheter som utbröt i Karlskrona under natten efter att färjan från Polen anlänt har spridit sig över hela staden. Under natten har flera nödrop kommit. Polisen har rapporterat upplopp över hela staden. Bränder, skottlossning, mord och misshandel har rapporterats. Blekingesjukhuset rapporterade redan vid 02 att verksamheten stänger. Sedan 05 i morse har inga ytterligare nyheter kommit från staden. Telefonnät är överbelastade och även polisens kommunikation har brutits.
+*line_break
+[i]”Regeringen utfärdar allvarligt katastrofläge. De oroligheter som utbröt i Karlskrona under natten efter att färjan från Polen anlänt har spridit sig över hela staden. Under natten har flera nödrop kommit. Polisen har rapporterat upplopp över hela staden. Bränder, skottlossning, mord och misshandel har rapporterats. Blekingesjukhuset rapporterade redan vid 02 att verksamheten stänger. Sedan 05 i morse har inga ytterligare nyheter kommit från staden. Telefonnät är överbelastade och även polisens kommunikation har brutits.
 Det har spekulerats om det rör sig om ett anfall från en främmande makt, men de senaste teorierna är att det rör sig om någon typ av smittsam sjukdom. Detta tycks ha utlöst den panik som orsakat kravallerna.
-Lina Bengtsdotter, miljöpartiets lokala talesperson i Blekinge, som för tillfället befinner sig i Stockholm på klimatkonferens, har uttalat att det kan bero på allt för högt intag av animaliska näringsämnen och att detta genast måste utredas”.
+*line_break
+Lina Bengtsdotter, miljöpartiets lokala talesperson i Blekinge, som för tillfället befinner sig i Stockholm på klimatkonferens, har uttalat att det kan bero på allt för högt intag av animaliska näringsämnen och att detta genast måste utredas”.[/i]
+*line_break
 Du blir fundersam. Det låter oroväckande. Du är inte helt säker men du tror inte att kuststaden är så långt bort. Tio mil kanske. Du undrar om det kommer att påverka dina studier som börjar i morgon.
 Du bestämmer dig för att gå ner till den lokala butiken.
 *choice
