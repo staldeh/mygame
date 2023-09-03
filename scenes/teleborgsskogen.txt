@@ -8,7 +8,15 @@ När du passerar ett hus ser du kroppen av en man i trädgården. Han ligger hel
         som sakta håller på att bli större under honom. Den röda vätskan har spridit ut sig långt till att lätt vara dubbelt så stor som hans silhuett,
         det befläckade gräset en skarp kontrast med mannens gråa hud.
         *line_break
-        Du vill bli mer upprörd, visa sorg och sympati för honom, men det enda du orkar, nej vågar göra är att sucka djupt.
+        Du vill bli mer upprörd, visa sorg och sympati för honom, men det enda du orkar, nej det enda du vågar göra är att sucka djupt. 
+        "Åtminstone dog du med dina ögon stängda" Hinner du tänka innan han spärrar upp sina ögon och utlöser ett skrik. 
+        Du faller bakåt och landar på din röv, i all hast försöker du greppa något i närheten, en kvist, en sten. men det enda du har är ett krigsrop.
+         "Vaaad!?" Är det i detta fall.
+        Den bleka vänder sitt ansikte mot dig, ansikte förvridet. "Va?" 
+        "Vafa.. va?" Din rädsla byts mot förvirring.
+        "Vad.." Mannens ansikte förvrids i smärta men han verkar inte ens ha ork till att skrika nu. 
+        "Det gör ont.. " 
+
         *finish
     #Du fortsätter framåt mot ett skogsparti. Han kan vara en av de smittade.
         Text för detta val.
