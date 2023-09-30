@@ -21,7 +21,10 @@ När du passerar ett hus ser du kroppen av en man i trädgården. Han ligger hel
         "Helikopter?" Även om du tycker synd om den sargade mannen så kan du inte hjälpa att fokusera på det ordet. 
         "Jag var kameraman, vi skulle rapportera om våldsvågen men vi kunde inte hitta en plats att landa så vi blev tvungna att försöka ta oss
         nära växjö.." Han hostar och du kan se den röda vätskan börja samlas i hans mun. "Tobias, Ljudkillen blev blekare under resan men vi insåg
-        inte vad som hände förräns han rusade på oss, ha..han bet upp ansiktet på reportern, jag drog bort honom sen gav han sig på mig "
+        inte vad som hände förräns han rusade på oss, ha..han bet upp ansiktet på reportern, jag drog bort honom sen gav han sig på mig.. vi föll båda ut."
+        
+        Val,fråga: "Finns det någon plats som är säker? De har bara sagt att vi ska barrikera våra dörrar och undvika de.. sakerna" 
+        "Nej, det kommer inte fungera, det finns så många av de kräken att de har börjat samlas i grupper av flera hundra, och flera av dem är på väg  "
         
 
         *finish
