@@ -5,8 +5,10 @@
   vikaholm
   torparvagen
   torparkyrkan
+  ljungfalleskolan
   teleborgsskogen
   vattentornet
+  furutåskolan
   mes
   kyrkan
   variables

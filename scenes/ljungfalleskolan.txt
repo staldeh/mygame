@@ -1,0 +1,20 @@
+Du marker att du är törstig när du kommer fram till skolbyggnaden. Lite vatten eller så skulle sitta fint.
+När du närmar dig skolan ser du att det ligger en massa bråte utanför. När du kommer närmare ser du att det är kroppar av människor. Du håller tillbaka en kräkreflex och tittar runt. Det är märkligt för alla liken är skadade i huvudet på olika sätt, en del verkar ha gått huvudet inslaget, andra ngt som ser ut som ett hugg från en machete eller yxa och en del verkar ha blivit skjutna – i huvudet.
+*line_break
+Det märkligast är att alla är sönderbrända. Det verkar nästan som om ngn först gett sig på deras huvuden och sedan bränt dem. Detta måste vara en militär operation, tänker du.
+*line_break
+Du funderar på anledningen till huvudskadan?
+
+*choice
+    # Det är nog en tillfällighet
+        Du går in i skolan och ser att det är mörkt. Det luktar illa och du hör ett svagt ljud av något som gnisslar. Du känner dig lite bajsnödig.
+        *choice
+            #Gå till matsalen.
+                Du går mot matsalen där du tror att det kan finnas vatten.
+                *goto_scene matsal
+            #Gå till klassrummen.
+                Du går mot klassrummen för att se om du kan hitta något användbart.
+                *goto_scene klassrum
+            #Gå till biblioteket.
+                Du går mot biblioteket för att se om du kan hitta något intressant att läsa eller kanske vatten.
+                *goto_scene biblioteket
