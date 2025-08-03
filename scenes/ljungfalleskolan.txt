@@ -6,15 +6,46 @@ Det märkligast är att alla är sönderbrända. Det verkar nästan som om ngn f
 Du funderar på anledningen till huvudskadan?
 
 *choice
-    # Det är nog en tillfällighet
-        Du går in i skolan och ser att det är mörkt. Det luktar illa och du hör ett svagt ljud av något som gnisslar. Du känner dig lite bajsnödig.
+    #Det är nog en tillfällighet. 
+        Du är uppenbarligen korkad.
+        *goto_scene death
+    #Det kan vara så att det enda sättet att döda en zombie är att skjuta den i huvudet, jag tror jag läst om det i ngn dikt.
+        Bra tänkt, man borde skaffa sig ngt vapen / mer vapen.
+        *line_break 
+        Jag kollar om ngn rör på sig, om de har ngt vatten på sig men allt är förstört av branden. Jag ser ett sönderslaget fönster precis i närheten, längre fram är en dörr som står öppen. Det ser nästan ut som om det lyser inne i skolan. Där inne borde det finnas ngt vatten.
+        Hur kommer du in?
         *choice
-            # Gå till matsalen.
-                Du går mot matsalen där du tror att det kan finnas vatten.
-                *goto_scene matsal
-            # Gå till klassrummen.
-                Du går mot klassrummen för att se om du kan hitta något användbart.
-                *goto_scene klassrum
-            # Gå till biblioteket.
-                Du går mot biblioteket för att se om du kan hitta något intressant att läsa eller kanske vatten.
-                *goto_scene biblioteket
+            #Går fram till fönstret o kollar, ser så svårt ut att klättra in. 
+                Jag kikar in och kollar om det finns risk att skära sig. Det verkar OK. Jag klättrar in. Väl inne är det helt tyst, det vekar var ngt sort lagerrum.
+                *goto ljung2
+            #Dörren verkar bekvämare. Jag smyger dit och går in.
+                Dålig idé.
+                *goto_scene death
+    #Jag börjar gråta. 
+        Heter du Jontish och är en mes?
+        *goto_scene death
+
+*label ljung2
+*choice
+    #A
+        Text1
+        *finish
+    #B
+        Text2
+        *finish
+        *choice
+            #A
+                Text1.1
+                *finish
+            #B
+                Text1.2
+                *choice
+                    #A
+                        Text2.1
+                    #B
+                        Text2.
+            #C
+                Text1.3
+            #D
+                Text1.4
+
