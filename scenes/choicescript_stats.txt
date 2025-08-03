@@ -9,4 +9,4 @@ Dina nuvarande stats:
   percent Fardighet
   percent Fysik
 
-
+*image karta2.jpeg
